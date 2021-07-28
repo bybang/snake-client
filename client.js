@@ -11,29 +11,15 @@ const connect = function () {
   
   conn.on("connect", () => {
     console.log("Successfully connected to game server")
-  })
-
-//    setTimeout(() => {
-//      console.log(word);
-//    }, 1000 * index)
-//  }) 
-
-  conn.on('connect', () => {
     conn.write('Name: JYB');
-  });
 
-  conn.on('connect', () => {
-    setInterval(() => {
-      conn.write("Move: up");
-    }, 50)
-  });
-  
-  conn.on('connect', () => {
-    setInterval(() => {
-      conn.write("Move: left");
-    }, 100)
-  });
-
+    //setInterval(() => {
+    //  conn.write(move[0]);
+    //}, 50)
+    //setInterval(() => {
+    //  conn.write("Move: left");
+    //}, 100)
+  })
   //conn.on("connect", () => {
   //  console.log('successfully connected!')
   //  // code that does something when the connection is first established
